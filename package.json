@@ -1,0 +1,13 @@
+{
+  "name": "gobarber-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nlmatt07/gobarber-api.git",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
+}
