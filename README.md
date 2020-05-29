@@ -1,6 +1,8 @@
 <h1 align="center">
 <br>
-  <img src="Capa.png" alt="GoBarber" width="90">
+  
+![Alt Text](https://github.com/nlmatt07/gobarber-api/blob/master/Capa.png)
+
 <br>
 <br>
 GoBarber
