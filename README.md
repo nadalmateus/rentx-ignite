@@ -1,6 +1,7 @@
 <h1 align="center">
 <br>
-  
+
+![Alt Text](https://github.com/nlmatt07/gobarber-api/blob/master/Capa.png)
 ![Alt Text](https://github.com/nlmatt07/gobarber-api/blob/master/Capa.png)
 
 <br>
