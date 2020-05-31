@@ -2,7 +2,7 @@
 <br>
 
 ![Alt Text](https://github.com/nlmatt07/gobarber-api/blob/master/Capa.png)
-![Alt Text](https://github.com/nlmatt07/gobarber-api/blob/master/Capa.png)
+![Alt Text](https://github.com/nlmatt07/gobarber-api/blob/master/Home.png)
 
 <br>
 <br>
@@ -25,21 +25,6 @@ GoBarber
 ## Features
 
 A Node.js API built with Express and all the latest tools and best practices in development!
-
-- ⚡ **Express** — A web framework for Node
-- 💾 **Sequelize** — SQL dialect ORM for Node.js
-- 🍂 **MongoDB** — document-based database
-- 🔑 **Redis** — key-value data model
-- ⌨️ **Yup** - Object schema validation
-- 🔺 **Sentry** - cross-platform application monitoring
-- 📧 **Nodemailer** - Send e-mails with Node.JS
-- 💖 **Lint** — ESlint/Prettier/Editor Config
-
-## Dependencies
-
-- [Node.js](https://nodejs.org/en/) 8.0.0 ou >
-- [Yarn](https://yarnpkg.com/pt-BR/docs/install)
-- [Docker](https://www.docker.com/)
 
 ## Prerequisites
 
