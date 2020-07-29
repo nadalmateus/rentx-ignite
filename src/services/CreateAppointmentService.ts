@@ -1,4 +1,6 @@
+import { startOfHour } from 'date-fns';
 import Appoitment from '../models/Appointment';
+import AppointmentsRepository from '../repositories/AppointmentsRepository';
 
 interface Request {
   date: Date;
@@ -6,18 +8,24 @@ interface Request {
 }
 
 class CreateAppointmentService {
+  private appointmentsRepository: AppointmentsRepository;
+
+  constructor(appointmentsRepository: AppointmentsRepository) {
+    this.appointmentsRepository = appointmentsRepository;
+  }
+
   public execute({ date, provider }: Request): Appoitment {
     const appointmentDate = startOfHour(date);
 
-    const findAppointmentInSameDate = appointmentsRepository.findByDate(
-      parsedDate,
+    const findAppointmentInSameDate = this.appointmentsRepository.findByDate(
+      appointmentDate,
     );
 
     if (findAppointmentInSameDate) {
-      return response.status(400).json({ message: 'Horario Já Agendado' });
+      throw Error('Horario Já Agendado');
     }
 
-    const appointment = appointmentsRepository.create({
+    const appointment = this.appointmentsRepository.create({
       provider,
       date: appointmentDate,
     });
