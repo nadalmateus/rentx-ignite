@@ -66,4 +66,4 @@
 - O usuário não pode agendar em um horário que já passou;
 - O usuário não pode agendar serviços consigo mesmo;
 - Cada agendamento deve durar 1h exatamente;
-- O usuário não pode agendar em um horário já ocupado;
+- O usuário não pode agendar em um horário já ocupado.
