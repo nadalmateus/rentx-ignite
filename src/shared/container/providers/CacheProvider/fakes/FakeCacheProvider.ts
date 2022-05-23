@@ -1,4 +1,4 @@
-import ICacheProvider from '../models/ICacheProvider';
+import ICacheProvider from "../models/ICacheProvider";
 
 interface ICacheData {
   [key: string]: string;
@@ -28,11 +28,11 @@ export default class FakeCacheProvider implements ICacheProvider {
   }
 
   public async invalidatePrefix(prefix: string): Promise<void> {
-    const keys = Object.keys(this.cache).filter(key =>
-      key.startsWith(`${prefix}:`),
+    const keys = Object.keys(this.cache).filter((key) =>
+      key.startsWith(`${prefix}:`)
     );
 
-    keys.forEach(key => {
+    keys.forEach((key) => {
       delete this.cache[key];
     });
   }

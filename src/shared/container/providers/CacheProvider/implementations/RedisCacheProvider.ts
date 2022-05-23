@@ -1,6 +1,6 @@
-import Redis, { Redis as RedisClient } from 'ioredis';
-import cacheConfig from '@config/cache';
-import ICacheProvider from '../models/ICacheProvider';
+import Redis, { Redis as RedisClient } from "ioredis";
+import cacheConfig from "@config/cache";
+import ICacheProvider from "../models/ICacheProvider";
 
 export default class RedisCacheProvider implements ICacheProvider {
   private client: RedisClient;
@@ -34,7 +34,7 @@ export default class RedisCacheProvider implements ICacheProvider {
 
     const pipeline = this.client.pipeline();
 
-    keys.forEach(key => {
+    keys.forEach((key) => {
       pipeline.del(key);
     });
 

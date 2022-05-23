@@ -5,9 +5,9 @@ import {
   CreateDateColumn,
   UpdateDateColumn,
   ObjectIdColumn,
-} from 'typeorm';
+} from "typeorm";
 
-@Entity('notifications')
+@Entity("notifications")
 class Notification {
   @ObjectIdColumn()
   id: ObjectID;
@@ -15,7 +15,7 @@ class Notification {
   @Column()
   content: string;
 
-  @Column('uuid')
+  @Column("uuid")
   recipient_id: string;
 
   @Column({ default: false })
