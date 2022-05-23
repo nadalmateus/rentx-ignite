@@ -1,7 +1,7 @@
-import { RedisOptions } from 'ioredis';
+import { RedisOptions } from "ioredis";
 
 interface ICacheConfig {
-  driver: 'redis';
+  driver: "redis";
 
   config: {
     redis: RedisOptions;
@@ -9,7 +9,7 @@ interface ICacheConfig {
 }
 
 export default {
-  driver: 'redis',
+  driver: "redis",
 
   config: {
     redis: {
